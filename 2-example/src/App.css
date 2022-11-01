@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.box {
+  width: 800px;
+  height: 745px;
+  margin-left: 20%;
+  background-color: rgba(215, 242, 255, 0.692);
+  position: absolute;
+  border-radius: 2%;
+}
+.box>*{
+  position: relative;
+  top: 5%;
+  left: 5%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.up {
+  width: 90%;
+  height: 40%;
+  background-image: url("https://thuthuatnhanh.com/wp-content/uploads/2022/06/Hinh-nen-iPad-4K.jpg");
+  background-size:cover;
+  
+  
+}
+
+.user {
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+
+  
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  top: 50%;
+}
+.info img {
+  height: 47%;
+  margin-left: 5%;
+  width: auto;
+  border-radius: 50%;
+     
+}
+
+
+.name {
+  width: 70%;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.dbox {
+  width: 100%;
+  height: 43px;
+  border: 1px solid rgb(214, 205, 205);
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+
+  
+  
+}
+
+.dbox>h4 {
+  margin: auto;
+  color: rgb(132, 128, 128);
+  font-size:larger;
+  margin-left: 40px;
+}
+
+.num {
+  position: relative;
+  height: 60%;
+  width:15%;
+  margin: auto;
+  margin-right: 8%;
+  display: flex;
+  border-radius: 7%;
+ }
+
+ h4{
+  color: red;
+  
+ }
+
+.num h4 {
+  margin: auto; 
+  font-size: large;
+  color: rgb(255, 255, 255);
+}
+
+.c1 {
+  background-color: rgba(255, 67, 67, 0.8);
+ 
+}
+.c2 {
+  background-color: rgba(67, 67, 228, 0.834);
+}
+.c3 {
+  background-color: rgba(41, 139, 41, 0.814);
+}
+.c4 {
+  background-color: rgb(235, 177, 43);
+}
+.c5 {
+  background-color: rgba(114, 14, 114, 0.789);
+}
