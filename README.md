@@ -147,8 +147,25 @@ API:
 promiseAll: 
 --------------------------
 REACTJS
+
 -Tạo React-app: open link: https://create-react-app.dev/docs/getting-started/
 - Copy link: Creating a TypeScript app: npx create-react-app my-app --template typescript
 - Mở Intergrated Terminal: paste link --> đổi my-app thành 2-example (tên app- có thể đặt tự do) --> Enter
 
 -Tất cả file đều thực hiện trong file src
+
+Run file React: mở terminal file cần chạy --> nhập nmp start
+
+COMPONENTS / PROPS
+-Components cha (App.tsx)
++ Gọi component con: 
+-Truyền dữ liệu:
++ Class component: tsrce
+<h4>{this.props.userProps.address}</h4>
++Functional component: rfce
+<h4>{userProps.address}</h4>
+
++ Key: định danh phần tử --> không được trùng key
+VD:
+key={`user1-${index}`}
+key={`user2-${index}`}

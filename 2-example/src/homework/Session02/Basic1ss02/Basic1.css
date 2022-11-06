@@ -1,0 +1,39 @@
+.container {
+  width: 550px;
+  height: 250px;
+  
+  position: absolute;
+  display: flex;
+ 
+}
+.box{
+  width: 50%;
+  height: auto;
+  border: solid 1px rgb(8, 8, 8);
+  background-color: rgba(215, 242, 255, 0.692);
+  display: flex;
+  position: relative;
+}
+.box>*{
+  position: relative;
+  top: 5%;
+  left: 5%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img {
+  width: 50%;
+  height: 90%;
+  background-size:cover;
+  display: flex;
+}
+
+.textbox {
+  width: 40%;
+  height: 90%;
+  background-color: rgb(255, 255, 255);
+
+}
+h4 {
+  margin-top:20px
+}
