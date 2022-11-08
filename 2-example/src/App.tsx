@@ -9,7 +9,12 @@ import React from "react";
 // import Blockui1 from "./homework/Session02/Blockui1/Blockui1"
 // import Blockui2 from "./homework/Session02/Blockui2/Blockui2";
 // import Blockui3 from "./homework/Session02/Blockui3/Blockui3";
-import IconComponent from "./homework/Session03/IconComponent"
+
+// import IconComponent from "./homework/Session03/IconComponent"
+
+// import TabsContent from "./homework/Session03/TabsComponent/TabsContent"
+import Accor from "./homework/Session03/Accordion/Accor"
+// import ListSong from "./homework/Session03/MusicPlayer/ListSong";
 
 // interface Iuser {
 //   name: string;
@@ -97,7 +102,10 @@ function App() {
       /> */}
       {/* <Basic2/> */}
       {/* <ClassComponent/> */}
-      <IconComponent/>
+      {/* <IconComponent/> */}
+      {/* <TabsContent/> */}
+      <Accor/>
+      {/* <ListSong/> */}
     </div>
   );
 }

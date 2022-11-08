@@ -1,9 +1,9 @@
 // tsrcfull
 import * as React from "react";
 import { AiFillLike } from "react-icons/ai";
-import { AiFillDislike } from "react-icons/ai";
+// import { AiFillDislike } from "react-icons/ai";
 import { AiOutlineLike } from "react-icons/ai";
-import { AiOutlineDislike } from "react-icons/ai";
+// import { AiOutlineDislike } from "react-icons/ai";
 // import { AiFillStar } from 'react-icons/ai';
 // import { AiOutlineStar } from "react-icons/ai";
 import Rating from "./Rating";
