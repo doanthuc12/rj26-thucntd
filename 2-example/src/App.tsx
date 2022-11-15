@@ -1,4 +1,6 @@
 import React from "react";
+import FormExF from "./features/FormExF";
+
 // import ClassComponent from "./features/ClassComponent";
 // import logo from "./image/thuc.jpg";
 // import "./App.css";
@@ -13,8 +15,22 @@ import React from "react";
 // import IconComponent from "./homework/Session03/IconComponent"
 
 // import TabsContent from "./homework/Session03/TabsComponent/TabsContent"
-import Accor from "./homework/Session03/Accordion/Accor"
+
+// import Bt1 from "./homework/Session04/Bt1";
+// import Bt2 from "./homework/Session04/Bt2";
+// import Bt3 from "./homework/Session04/Bt3";
+// import Bt4 from "./homework/Session04/Bt4";
+// import Bt5 from "./homework/Session04/Bt5";
+// import Bt6 from "./homework/Session04/Bt6";
+// import Bt7 from "./homework/Session04/Bt7";
+// import Bt8 from "./homework/Session04/Bt8";
+
+
+// import Accor from "./homework/Session03/Accordion/Accor"
+// import LikeBtn from "./homework/Session03/LikeBtn";
 // import ListSong from "./homework/Session03/MusicPlayer/ListSong";
+// import CaroselF from "./homework/Session03/CaroselF";
+// import RatingF from "./homework/Session03/RatingF";
 
 // interface Iuser {
 //   name: string;
@@ -104,8 +120,22 @@ function App() {
       {/* <ClassComponent/> */}
       {/* <IconComponent/> */}
       {/* <TabsContent/> */}
-      <Accor/>
+      {/* <Accor/> */}
       {/* <ListSong/> */}
+      {/* <LikeBtn/>
+      <RatingF/> */}
+      {/* <CaroselF/> */}
+
+      {/* <Bt1/> */}
+      {/* <Bt2/> */}
+      {/* <Bt3/> */}
+      {/* <Bt4/> */}
+      {/* <Bt5/> */}
+      {/* <Bt6/> */}
+      {/* <Bt7/> */}
+      {/* <Bt8/> */}
+
+      <FormExF/>
     </div>
   );
 }
