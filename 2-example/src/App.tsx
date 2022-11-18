@@ -1,5 +1,12 @@
 import React from "react";
-import FormExF from "./features/FormExF";
+
+
+import RoutesEx from "./features/Session07/RoutesEx";
+// import DetailUser from "./features/DetailUser";
+
+// import FormUser from "./features/Session07/FormUser";
+// import FormExF from "./features/FormExF";
+// import ListUser from "./features/Session07/ListUser";
 
 // import ClassComponent from "./features/ClassComponent";
 // import logo from "./image/thuc.jpg";
@@ -135,7 +142,12 @@ function App() {
       {/* <Bt7/> */}
       {/* <Bt8/> */}
 
-      <FormExF/>
+      {/* <FormExF/> */}
+
+      {/* <ListUser/> */}
+      {/* <FormUser/> */}
+      {/* <DetailUser/> */}
+      <RoutesEx/>
     </div>
   );
 }

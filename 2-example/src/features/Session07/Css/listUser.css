@@ -1,0 +1,47 @@
+/* Remove browser defaults */
+* {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0px;
+}
+
+/* Style App.js wrapper */
+.ListUser {
+  width: 100vw;
+  /* height: 90vh; */
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Tab Container */
+table {
+  width: 80%;
+  height: auto;
+  min-height: 400px;
+  text-align: center;
+  margin: 3.5rem auto 1.5rem;
+  padding: 2rem 1rem;
+  border-radius: 3rem !important;
+  border: 1px solid black;
+}
+
+th {
+    height: 30px;
+    vertical-align: center;
+}
+button {
+  width: 100px;
+  border-radius: 0.5em;
+  margin-right: 10px !important;
+  background: rgb(154, 196, 216);
+}
+.btn-detail:hover {
+  background: rgb(122, 204, 147);
+  color: rgb(247, 255, 248) !important;
+}
+
+.btn-delete:hover {
+  background: rgb(248, 116, 112);
+  color: rgb(255, 254, 254) !important;
+}

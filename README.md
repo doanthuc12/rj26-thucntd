@@ -169,3 +169,11 @@ COMPONENTS / PROPS
 VD:
 key={`user1-${index}`}
 key={`user2-${index}`}
+
+ICON:
+- Link icon: https://react-icons.github.io/react-icons/icons?name=fc
+- import { AiOutlineLike, AiFillLike} from "react-icons/ai"
+- Sử dụng như một cpn <AiOutlineLike/>
+
+  CRUD (CREATE - READ - UPDATE - DELETE) (GET - PUT - POST -DELETE)
+  - 
