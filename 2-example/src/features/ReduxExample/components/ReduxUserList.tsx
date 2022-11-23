@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getUsersAsync } from "../action/userAction";
+import { deleteUsersAsync,getUsersAsync } from "../action/userAction";
+
+import '../Css/listUser.css'
 
 interface IState {
   userReducers: IUserReducer;
@@ -24,13 +26,22 @@ function ReduxUserList() {
   useEffect(() => {
     dispatch(getUsersAsync());
   }, []);
+  const handleDelete = (userId: string | number) => {
+    console.log(userId);
+    dispatch(deleteUsersAsync(userId));
+  }
+  const handleDetail = (userId: string | number) => {
+    console.log(userId);
+    dispatch(deleteUsersAsync(userId));
+  }
   return (
     <>
-      {loading && <p>Loading...</p>}
-      {users?.map((user) => (
+      {/* {loading && <p>Loading...</p>} */}
+      {/* {users?.map((user) => (
         <p key={user.id}>user.name</p>
-      ))}
-      {/* <table className="table table-success table-striped">
+      ))} */}
+      
+      <table className="table table-success table-striped">
         <thead>
           <tr>
             <th scope="col">ID</th>
@@ -46,18 +57,18 @@ function ReduxUserList() {
               <tr key={`user-${user.id}`}>
                 <th scope="row">{user.id}</th>
                 <td>{user.name}</td>
-                <td>{user.avatar}</td>
+                <td className="text-break">{user.avatar}</td>
                 <td>{user.email}</td>
                 <td>
                   <button
                     className="btn-detail"
-                    // onClick={() => handleDetail(user.id)}
+                    onClick={() => handleDetail(user.id)}
                   >
                     Detail
                   </button>
                   <button
                     className="btn-delete"
-                    // onClick={() => handleDelete(user.id)}
+                    onClick={() => handleDelete(user.id)}
                   >
                     Delete
                   </button>
@@ -66,7 +77,7 @@ function ReduxUserList() {
             );
           })}
         </tbody>
-      </table> */}
+      </table>
     </>
   );
 }

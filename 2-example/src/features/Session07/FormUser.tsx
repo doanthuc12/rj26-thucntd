@@ -1,6 +1,7 @@
 import React, { useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 import "./Css/formUser.css";
+import  {useNavigate} from "react-router-dom";
 
 interface Iuser {
   userName: string;
@@ -14,9 +15,14 @@ const defaultValue: Iuser = {
 function FormUser() {
   //user {name, avatar,}
   const [user, setUser] = useState<Iuser>(defaultValue);
+  const [isSubmit, setIsSubmit] = useState<boolean>(false);
+  let naviget = useNavigate();
   let params = useParams();
   useEffect(() => {
     getUser(params.id);
+    if (params.id) {
+      setIsSubmit (true)
+    }
   }, []);
 
   const getUser = (userId: string | undefined) => {
@@ -39,6 +45,7 @@ function FormUser() {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log(user);
+    naviget ("/listuser")
     let data = {
       name: user.userName,
       avatar: user.userAvatar,
@@ -110,7 +117,7 @@ function FormUser() {
         </div>
         <br />
 
-        <button>Submit</button>
+        <button>{isSubmit? 'Update' : 'Submit'}</button>
       </form>
     </div>
   );

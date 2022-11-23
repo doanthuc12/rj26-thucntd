@@ -66,6 +66,7 @@ function ListUser() {
             <th scope="col">ID</th>
             <th scope="col w-25">Name</th>
             <th scope="col w-25">Avatar</th>
+            <th scope="col w-25">Email</th>
             <th scope="col"></th>
           </tr>
         </thead>
@@ -76,6 +77,7 @@ function ListUser() {
                 <th scope="row">{user.id}</th>
                 <td>{user.name}</td>
                 <td>{user.avatar}</td>
+                <td>{user.email}</td>
                 <td>
                   <button
                     className="btn-detail"
