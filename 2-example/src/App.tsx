@@ -1,7 +1,10 @@
 import React from "react";
+import ReduxTs from "./features/ReduxTs/ReduxTs";
+
+// import ReduxEx from "./features/ReduxExample/ReduxEx";
 
 
-import RoutesEx from "./features/Session07/RoutesEx";
+// import RoutesEx from "./features/Session07/RoutesEx";
 // import DetailUser from "./features/DetailUser";
 
 // import FormUser from "./features/Session07/FormUser";
@@ -147,7 +150,10 @@ function App() {
       {/* <ListUser/> */}
       {/* <FormUser/> */}
       {/* <DetailUser/> */}
-      <RoutesEx/>
+      {/* <RoutesEx/> */}
+      {/* <ReduxEx/> */}
+      {/* <ReduxTs/> */}
+      <ReduxTs/>
     </div>
   );
 }

@@ -7,9 +7,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 20px;
-  width: 600px !important;
-  height: 350px;
+  /* gap: 10px; */
+  width: 500px !important;
+  height: 450px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: #f8f9fd;
   padding: 2rem;
@@ -17,9 +17,10 @@
 }
 
 form {
-  display: flex;
+  width: 95%;
+  /* display: flex; */
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
   margin: 10px;
 }
 label {
@@ -32,21 +33,22 @@ label {
 input {
   box-sizing: border-box;
   position: relative;
-  margin: 10px;
-  height: 25px;
-  width: 70%;
+  margin: 5px;
+  height: 20px;
+  width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 30px;
 }
 
 button {
-  margin-top: 10px;
+
   cursor: pointer;
-  font-size: 25px;
+  font-size: large;
   border-radius: 1em !important;
   color: rgb(46, 46, 46);
   padding: 10px 20px;
   margin-left: 150px;
+  margin-bottom: 50px;
 }
 
 button:hover {

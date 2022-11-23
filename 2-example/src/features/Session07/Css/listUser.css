@@ -30,11 +30,13 @@ th {
     height: 30px;
     vertical-align: center;
 }
-button {
+td{}
+.btn-detail .btn-delete{
   width: 100px;
   border-radius: 0.5em;
   margin-right: 10px !important;
   background: rgb(154, 196, 216);
+  font-size: medium;
 }
 .btn-detail:hover {
   background: rgb(122, 204, 147);
