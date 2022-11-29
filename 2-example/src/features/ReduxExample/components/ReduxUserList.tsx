@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { deleteUsersAsync,getUsersAsync } from "../action/userAction";
+import { useNavigate } from 'react-router-dom';
 
 import '../Css/listUser.css'
 
@@ -23,6 +24,8 @@ interface IUser {
 function ReduxUserList() {
   const dispatch = useDispatch();
   const { users, loading } = useSelector((state: IState) => state.userReducers);
+  const navigate = useNavigate();
+  
   useEffect(() => {
     dispatch(getUsersAsync());
   }, []);
@@ -32,7 +35,7 @@ function ReduxUserList() {
   }
   const handleDetail = (userId: string | number) => {
     console.log(userId);
-    dispatch(deleteUsersAsync(userId));
+    navigate('/detail/' + userId);
   }
   return (
     <>

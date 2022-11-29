@@ -1,0 +1,32 @@
+
+
+.col {
+  margin: 5%;
+  margin-bottom: 30px;
+}
+.col-3 {
+  height: 90%;
+  width: 50%;
+  margin-top: 10px;
+  padding: 0px;
+}
+.col-3 h1,
+p {
+  padding-left: 20px;
+}
+.c3 {
+  background-color: rgb(178, 217, 233);
+}
+h6 {
+  font-size: large;
+  border-bottom: 2px solid rgb(238, 238, 238);
+  margin: 10%;
+  text-align: left;
+}
+
+.col-6 {
+  padding-left: 0px;
+}
+.fixed-bottom footer{
+    position:absolute;
+}

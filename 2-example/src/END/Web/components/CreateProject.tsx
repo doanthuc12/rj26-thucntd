@@ -1,19 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "../Css/formUser.css";
+import "../css/createProject.css";
 import { useNavigate } from "react-router-dom";
 
 interface Iuser {
   userName: string;
-  userAvatar: string;
 }
 
 const defaultValue: Iuser = {
-  userName: "",
-  userAvatar: "",
+  userName: ""
 };
-function ReduxUserForm() {
-  //user {name, avatar,}
+function CreateProject() {
   const [user, setUser] = useState<Iuser>(defaultValue);
   const [isSubmit, setIsSubmit] = useState<boolean>(false);
   let naviget = useNavigate();
@@ -34,9 +31,7 @@ function ReduxUserForm() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        setUser({ userName: data?.name, userAvatar: data?.avatar });
-        // setUserName(data?.name)
-        // setUserAvatar(data?.avatar)
+        setUser({ userName: data?.name });
       })
       .catch((error) => {
         console.error("Error:", error);
@@ -45,10 +40,9 @@ function ReduxUserForm() {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log(user);
-    naviget("/listuser");
+    naviget("/list");
     let data = {
       name: user.userName,
-      avatar: user.userAvatar,
     };
     if (params.id) {
       updateUser(data, params.id);
@@ -91,24 +85,14 @@ function ReduxUserForm() {
     } else {
       setUser({ ...user, [e.target.name]: e.target.value });
     }
-    // console.log(e.target.value);
   };
 
   return (
-    <div
-      className="container"
-      style={{
-        marginTop: "-100px",
-        background: "hsla(0, 0%, 100%, 0.8)",
-        backdropFilter: "blur(30px)",
-      }}
-    >
-      <form className=" text-center" onSubmit={handleSubmit}>
-        <h2 className="fw-bold mb-5">User Form</h2>
+    <div className="container">
+      <form onSubmit={handleSubmit}>
         <div className="col">
-          <label>Name</label>
+          <label>Name Project</label>
           <input
-            className="mb-4"
             type="text"
             name="userName"
             placeholder="text here"
@@ -116,22 +100,13 @@ function ReduxUserForm() {
             onChange={handleChange}
           />
         </div>
-        <div className="col">
-          <label>Avatar</label>
-          <input
-            className="mb-4"
-            type="text"
-            name="userAvatar"
-            value={user?.userAvatar ? user.userAvatar : ""}
-            onChange={handleChange}
-          />
-        </div>
+
         <br />
-        
-        <button >{isSubmit ? "Update" : "Submit"}</button>
+
+        <button>{isSubmit ? "Update" : "Create"}</button>
       </form>
     </div>
   );
 }
 
-export default ReduxUserForm;
+export default CreateProject;

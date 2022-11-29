@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import "../ReduxExample/Css/styles.css"
 
 interface Iuser {
   avatar: string;
@@ -34,11 +33,11 @@ function DetailUser() {
   };
 
   return (
-    <div className="bg">
+    <>
       <title>Detail User</title>
-      <div className="card " style={{ width: "18rem"  }}>
+      <div className="card" style={{ width: "18rem" }}>
         <img src={user?.avatar} className="card-img-top" alt="..." />
-        <div className="card-body " >
+        <div className="card-body">
           <h5 className="card-title">{user?.name}</h5>
           <p className="card-text">{user?.email}</p>
           <Link to={"/formuser/" + user?.id} className="btn btn-primary">
@@ -46,7 +45,7 @@ function DetailUser() {
           </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

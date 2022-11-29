@@ -4,23 +4,24 @@
   margin-bottom: 50px !important;
   font-family: sans-serif;
   display: flex;
-  align-items: center;
+  align-items: center !important;
   justify-content: center;
   flex-direction: column;
   /* gap: 10px; */
   width: 500px !important;
-  height: 300px;
+  height: 550px !important;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: #f8f9fd;
   padding: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
 form {
   width: 95%;
   /* display: flex; */
   flex-direction: column;
-  gap: 5px;
+  /* gap: 5px; */
   margin: 10px;
 }
 label {
@@ -33,7 +34,7 @@ label {
 input {
   box-sizing: border-box;
   position: relative;
-  margin: 5px;
+  /* margin: 5px; */
   height: 20px;
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -41,13 +42,12 @@ input {
 }
 
 button {
-
   cursor: pointer;
-  font-size: large;
+  font-size: 20px !important;
   border-radius: 1em !important;
   color: rgb(46, 46, 46);
   padding: 10px 20px;
-  margin-left: 160px !important;
+  margin-left: 100px;
   margin-bottom: 50px;
 }
 

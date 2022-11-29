@@ -1,6 +1,8 @@
 import React from "react";
+import WebRouter from "./END/Web/WebRouter";
 
-import ReduxEx from "./features/ReduxExample/ReduxEx";
+// import ReduxEx from "./features/ReduxExample/ReduxEx";
+// import ReduxWeb from "./features/WebFinalRedux/ReduxWeb";
 // import ReduxTs from "./features/ReduxTs/ReduxTs";
 
 
@@ -151,9 +153,11 @@ function App() {
       {/* <FormUser/> */}
       {/* <DetailUser/> */}
       {/* <RoutesEx/> */}
-      <ReduxEx/>
+      {/* <ReduxEx/> */}
       
+      {/* <ReduxWeb/> */}
 
+      <WebRouter/>
     </div>
   );
 }

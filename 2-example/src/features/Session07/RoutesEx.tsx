@@ -5,12 +5,17 @@ import FormUser from "./FormUser";
 import ListUser from "./ListUser";
 import "./Css/styles.css";
 import DetailUser from "./DetailUser";
+import Home from "./Home";
+
 
 function RoutesEx() {
   return (
     <BrowserRouter>
       {/* NAVIGATION */}
       <ul className={"navigation"}>
+      <li className={"link"}>
+          <Link to="/home">Home Page</Link>
+        </li>
         <li className={"link"}>
           <Link to="/formuser">Form User</Link>
         </li>
@@ -20,6 +25,7 @@ function RoutesEx() {
       </ul>
 
       <Routes>
+        <Route path="/home" element={<Home/>}/>
         <Route path="/formuser" element={<FormUser />} />
         <Route path="/listuser" element={<ListUser />} />
         <Route path="/detail/:id" element={<DetailUser/>}/>
